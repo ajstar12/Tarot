@@ -9,12 +9,12 @@ class ViewModel(application: Application, activity: Activity?) {
     // creating a new variable for course repository.
     private var repository: RoomRepository? = RoomRepository(application, activity)
 
-    suspend fun insert(model: CardModel) {
+    fun insert(model: CardModel) {
 //        viewModelScope.launch(Dispatchers.IO) {
             repository!!.insert(model)
 //        }
     }
-    suspend fun insertAll(model: List<CardModel>) {
+    fun insertAll(model: List<CardModel>) {
         repository!!.insertAll(model)
     }
 

@@ -15,12 +15,20 @@ class RoomRepository(application: Application, activity: Activity?) {
         this.activity = activity
     }
 
-    suspend fun insert(model: CardModel) {
-        var result = dao!!.insert(model)
+    fun insert(model: CardModel) {
+        Thread(object : Runnable {
+            override fun run() {
+                dao!!.insert(model)
+            }
+        }).start()
     }
 
-    suspend fun insertAll(model: List<CardModel>) {
-        var result = dao!!.insertAll(model)
+    fun insertAll(model: List<CardModel>) {
+        Thread(object : Runnable {
+            override fun run() {
+                dao!!.insertAll(model)
+            }
+        }).start()
     }
 
     /*

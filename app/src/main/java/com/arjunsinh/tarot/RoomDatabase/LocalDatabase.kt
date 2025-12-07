@@ -3,13 +3,9 @@ package com.arjunsinh.tarot.RoomDatabase
 import android.content.Context
 import android.os.AsyncTask
 import androidx.room.Database
-import androidx.room.DatabaseConfiguration
-import androidx.room.InvalidationTracker
 import androidx.room.Room.databaseBuilder
 import androidx.room.RoomDatabase
-import androidx.room.migration.Migration
 import androidx.sqlite.db.SupportSQLiteDatabase
-import androidx.sqlite.db.SupportSQLiteOpenHelper
 import com.arjunsinh.tarot.RoomDatabase.Model.CardModel
 
 @Database(entities = [CardModel::class
@@ -80,15 +76,4 @@ abstract class LocalDatabase  : RoomDatabase() {
             }
         }*/
     }
-    protected override fun createOpenHelper(config: DatabaseConfiguration): SupportSQLiteOpenHelper {
-        return null!!
-    }
-
-    protected override fun createInvalidationTracker(): InvalidationTracker {
-        return null!!
-    }
-
-    public override fun clearAllTables() {
-    }
-
 }

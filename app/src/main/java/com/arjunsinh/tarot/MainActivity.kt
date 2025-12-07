@@ -35,9 +35,7 @@ class MainActivity : AppCompatActivity() {
         var json = assets.open("data.json").bufferedReader().use { it.readText() }
 
         var list: List<CardModel> = Gson().fromJson(json, object : TypeToken<List<CardModel>>() {}.type)
-        lifecycleScope.launch {
-            Constant.saveData(viewModel, list)
-        }
+        Constant.saveData(viewModel, list)
     }
 
     private fun setClick() {

@@ -9,10 +9,10 @@ import com.arjunsinh.tarot.RoomDatabase.Model.CardModel
 interface DaoFile {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(model: CardModel) : Long
+    fun insert(model: CardModel) : Long
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertAll(models: List<CardModel>) : List<Long>
+    fun insertAll(models: List<CardModel>) : List<Long>
 /*
     @Insert
     fun insertChoosenCharacter(model: ChoosedModel)

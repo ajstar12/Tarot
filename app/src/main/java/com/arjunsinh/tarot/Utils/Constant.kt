@@ -8,7 +8,7 @@ import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
 object Constant {
-    suspend fun saveData(viewModel: ViewModel, list : List<CardModel>){
+    fun saveData(viewModel: ViewModel, list : List<CardModel>){
         viewModel.insertAll(list)
     }
 }
