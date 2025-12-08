@@ -1,8 +1,10 @@
 package com.arjunsinh.tarot.RoomDatabase
 
+import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
+import androidx.room.Query
 import com.arjunsinh.tarot.RoomDatabase.Model.CardModel
 
 @Dao
@@ -13,15 +15,10 @@ interface DaoFile {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertAll(models: List<CardModel>) : List<Long>
+
+    @Query("SELECT * FROM mst_card ORDER BY id ASC")
+    fun getAllCard(): LiveData<List<CardModel>>
 /*
-    @Insert
-    fun insertChoosenCharacter(model: ChoosedModel)
-
-    @Insert
-    fun insertChat(model: ChatModel)
-
-    @Insert
-    fun insertMemory(model: MemoryModel)
 
     @Query("SELECT * FROM mst_character ORDER BY id DESC")
     fun getAllCharacter(): MutableList<CharacterModel>

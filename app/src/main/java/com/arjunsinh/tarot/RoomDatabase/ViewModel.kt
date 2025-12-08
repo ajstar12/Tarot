@@ -2,6 +2,7 @@ package com.arjunsinh.tarot.RoomDatabase
 
 import android.app.Activity
 import android.app.Application
+import androidx.lifecycle.LiveData
 import com.arjunsinh.tarot.RoomDatabase.Model.CardModel
 
 class ViewModel(application: Application, activity: Activity?) {
@@ -16,6 +17,9 @@ class ViewModel(application: Application, activity: Activity?) {
     }
     fun insertAll(model: List<CardModel>) {
         repository!!.insertAll(model)
+    }
+    fun getAllCard() : LiveData<List<CardModel>> {
+        return repository!!.getAllCard()
     }
 
 }
