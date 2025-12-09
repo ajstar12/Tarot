@@ -1,27 +1,54 @@
 package com.arjunsinh.tarot.Adapter
 
+import android.content.Context
+import android.content.Intent
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.arjunsinh.tarot.Activity.CardDetailsActivity
 import com.arjunsinh.tarot.RoomDatabase.Model.CardModel
+import com.arjunsinh.tarot.databinding.RecyclerCardListSingleBinding
 
 class RecyclerCardListAdapter(var list : List<CardModel>) : RecyclerView.Adapter<RecyclerCardListAdapter.ViewHolder>() {
 
+    lateinit var context: Context
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
+        context = parent.context
+        var binding = RecyclerCardListSingleBinding.inflate(LayoutInflater.from(parent.context), parent, false)
 
+        return ViewHolder(binding.root, binding)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        TODO("Not yet implemented")
+        var pojo = list[holder.absoluteAdapterPosition]
+
+        holder.binding.txtCardName.text = pojo.card_name
+
+        holder.itemView.setOnClickListener {
+            var intent = Intent(context, CardDetailsActivity::class.java)
+            intent.putExtra("card_details",pojo)
+            context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int {
         return list.size
     }
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
-        init {
+    override fun getItemViewType(position: Int): Int {
+        return position
+    }
 
+    class ViewHolder(itemView: View, subBinding: RecyclerCardListSingleBinding) : RecyclerView.ViewHolder(itemView){
+        lateinit var binding: RecyclerCardListSingleBinding
+        init {
+            binding = subBinding
         }
+    }
+    fun updateData(newList : List<CardModel>){
+        list = newList
+        notifyDataSetChanged()
     }
 }

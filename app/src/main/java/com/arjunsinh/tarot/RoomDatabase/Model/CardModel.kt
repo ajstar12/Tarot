@@ -1,8 +1,11 @@
 package com.arjunsinh.tarot.RoomDatabase.Model
 
+import android.os.Parcelable
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import kotlinx.parcelize.Parcelize
 
+@Parcelize
 @Entity(tableName = "mst_card")
 class CardModel(
     @PrimaryKey(autoGenerate = true)
@@ -27,4 +30,4 @@ class CardModel(
     var suit_meaning: String = "",
     var summary_reversed: String = "",
     var summary_upright: String = ""
-)
+) : Parcelable
