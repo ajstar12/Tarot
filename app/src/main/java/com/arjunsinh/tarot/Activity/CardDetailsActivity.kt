@@ -72,6 +72,11 @@ class CardDetailsActivity : AppCompatActivity() {
 
             binding.txtSummaryUpright.text = "➤ "+card_details.summary_upright
             binding.txtSummaryReversed.text = "➤ "+card_details.summary_reversed
+
+            val drawableId = Constant.cardImages[card_details.image]
+            if (drawableId != null) {
+                binding.imgCard.setImageResource(drawableId)
+            }
         }
     }
 

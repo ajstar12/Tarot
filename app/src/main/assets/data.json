@@ -1,6 +1,7 @@
 [
   {
     "card_name": "The Fool",
+    "image": "aaa_00_the_fool",
     "arcana": "major",
     "suit": "",
     "rank": "",
@@ -23,6 +24,7 @@
   },
   {
     "card_name": "The Magician",
+    "image": "aaa_01_the__magician",
     "arcana": "major",
     "suit": "",
     "rank": "",
@@ -45,6 +47,7 @@
   },
   {
     "card_name": "The High Priestess",
+    "image": "aaa_02_high_priestess",
     "arcana": "major",
     "suit": "",
     "rank": "",
@@ -67,6 +70,7 @@
   },
   {
     "card_name": "The Empress",
+    "image": "aaa_03_empress",
     "arcana": "major",
     "suit": "",
     "rank": "",
@@ -89,6 +93,7 @@
   },
   {
     "card_name": "The Emperor",
+    "image": "aaa_04_emperor",
     "arcana": "major",
     "suit": "",
     "rank": "",
@@ -111,6 +116,7 @@
   },
   {
     "card_name": "The Hierophant",
+    "image": "aaa_05_hierophant",
     "arcana": "major",
     "suit": "",
     "rank": "",
@@ -133,6 +139,7 @@
   },
   {
     "card_name": "The Lovers",
+    "image": "aaa_06_lovers",
     "arcana": "major",
     "suit": "",
     "rank": "",
@@ -155,6 +162,7 @@
   },
   {
     "card_name": "The Chariot",
+    "image": "aaa_07_chariot",
     "arcana": "major",
     "suit": "",
     "rank": "",
@@ -177,6 +185,7 @@
   },
   {
     "card_name": "Strength",
+    "image": "aaa_08_strength",
     "arcana": "major",
     "suit": "",
     "rank": "",
@@ -199,6 +208,7 @@
   },
   {
     "card_name": "The Hermit",
+    "image": "aaa_09_hermit",
     "arcana": "major",
     "suit": "",
     "rank": "",
@@ -221,6 +231,7 @@
   },
   {
     "card_name": "Wheel of Fortune",
+    "image": "aaa_10_wheel_of_fortune",
     "arcana": "major",
     "suit": "",
     "rank": "",
@@ -243,6 +254,7 @@
   },
   {
     "card_name": "Justice",
+    "image": "aaa_11_justice",
     "arcana": "major",
     "suit": "",
     "rank": "",
@@ -265,6 +277,7 @@
   },
   {
     "card_name": "The Hanged Man",
+    "image": "aaa_12_hanged_man",
     "arcana": "major",
     "suit": "",
     "rank": "",
@@ -287,6 +300,7 @@
   },
   {
     "card_name": "Death",
+    "image": "aaa_13_death",
     "arcana": "major",
     "suit": "",
     "rank": "",
@@ -309,6 +323,7 @@
   },
   {
     "card_name": "Temperance",
+    "image": "aaa_14_temperance",
     "arcana": "major",
     "suit": "",
     "rank": "",
@@ -331,6 +346,7 @@
   },
   {
     "card_name": "The Devil",
+    "image": "aaa_15_devil",
     "arcana": "major",
     "suit": "",
     "rank": "",
@@ -353,6 +369,7 @@
   },
   {
     "card_name": "The Tower",
+    "image": "aaa_16_tower",
     "arcana": "major",
     "suit": "",
     "rank": "",
@@ -375,6 +392,7 @@
   },
   {
     "card_name": "The Star",
+    "image": "aaa_17_star",
     "arcana": "major",
     "suit": "",
     "rank": "",
@@ -397,6 +415,7 @@
   },
   {
     "card_name": "The Moon",
+    "image": "aaa_18_moon",
     "arcana": "major",
     "suit": "",
     "rank": "",
@@ -419,6 +438,7 @@
   },
   {
     "card_name": "The Sun",
+    "image": "aaa_19_sun",
     "arcana": "major",
     "suit": "",
     "rank": "",
@@ -441,6 +461,7 @@
   },
   {
     "card_name": "Judgement",
+    "image": "aaa_20_judgement",
     "arcana": "major",
     "suit": "",
     "rank": "",
@@ -463,6 +484,7 @@
   },
   {
     "card_name": "The World",
+    "image": "aaa_21_world",
     "arcana": "major",
     "suit": "",
     "rank": "",
@@ -485,6 +507,7 @@
   },
   {
     "card_name": "Ace of Wands",
+    "image": "aaa_wands01",
     "arcana": "minor",
     "suit": "wands",
     "rank": "ace",
@@ -507,6 +530,7 @@
   },
   {
     "card_name": "Two of Wands",
+    "image": "aaa_wands02",
     "arcana": "minor",
     "suit": "wands",
     "rank": "2",
@@ -529,6 +553,7 @@
   },
   {
     "card_name": "Three of Wands",
+    "image": "aaa_wands03",
     "arcana": "minor",
     "suit": "wands",
     "rank": "3",
@@ -551,6 +576,7 @@
   },
   {
     "card_name": "Four of Wands",
+    "image": "aaa_wands04",
     "arcana": "minor",
     "suit": "wands",
     "rank": "4",
@@ -573,6 +599,7 @@
   },
   {
     "card_name": "Five of Wands",
+    "image": "aaa_wands05",
     "arcana": "minor",
     "suit": "wands",
     "rank": "5",
@@ -595,6 +622,7 @@
   },
   {
     "card_name": "Six of Wands",
+    "image": "aaa_wands06",
     "arcana": "minor",
     "suit": "wands",
     "rank": "6",
@@ -617,6 +645,7 @@
   },
   {
     "card_name": "Seven of Wands",
+    "image": "aaa_wands07",
     "arcana": "minor",
     "suit": "wands",
     "rank": "7",
@@ -639,6 +668,7 @@
   },
   {
     "card_name": "Eight of Wands",
+    "image": "aaa_wands08",
     "arcana": "minor",
     "suit": "wands",
     "rank": "8",
@@ -661,6 +691,7 @@
   },
   {
     "card_name": "Nine of Wands",
+    "image": "aaa_wands09",
     "arcana": "minor",
     "suit": "wands",
     "rank": "9",
@@ -683,6 +714,7 @@
   },
   {
     "card_name": "Ten of Wands",
+    "image": "aaa_wands10",
     "arcana": "minor",
     "suit": "wands",
     "rank": "10",
@@ -705,6 +737,7 @@
   },
   {
     "card_name": "Page of Wands",
+    "image": "aaa_wands11",
     "arcana": "minor",
     "suit": "wands",
     "rank": "page",
@@ -727,6 +760,7 @@
   },
   {
     "card_name": "Knight of Wands",
+    "image": "aaa_wands12",
     "arcana": "minor",
     "suit": "wands",
     "rank": "knight",
@@ -749,6 +783,7 @@
   },
   {
     "card_name": "Queen of Wands",
+    "image": "aaa_wands13",
     "arcana": "minor",
     "suit": "wands",
     "rank": "queen",
@@ -771,6 +806,7 @@
   },
   {
     "card_name": "King of Wands",
+    "image": "aaa_wands14",
     "arcana": "minor",
     "suit": "wands",
     "rank": "king",
@@ -793,6 +829,7 @@
   },
   {
     "card_name": "Ace of Cups",
+    "image": "aaa_cups01",
     "arcana": "minor",
     "suit": "cups",
     "rank": "ace",
@@ -815,6 +852,7 @@
   },
   {
     "card_name": "Two of Cups",
+    "image": "aaa_cups02",
     "arcana": "minor",
     "suit": "cups",
     "rank": "2",
@@ -837,6 +875,7 @@
   },
   {
     "card_name": "Three of Cups",
+    "image": "aaa_cups03",
     "arcana": "minor",
     "suit": "cups",
     "rank": "3",
@@ -859,6 +898,7 @@
   },
   {
     "card_name": "Four of Cups",
+    "image": "aaa_cups04",
     "arcana": "minor",
     "suit": "cups",
     "rank": "4",
@@ -881,6 +921,7 @@
   },
   {
     "card_name": "Five of Cups",
+    "image": "aaa_cups05",
     "arcana": "minor",
     "suit": "cups",
     "rank": "5",
@@ -903,6 +944,7 @@
   },
   {
     "card_name": "Six of Cups",
+    "image": "aaa_cups06",
     "arcana": "minor",
     "suit": "cups",
     "rank": "6",
@@ -925,6 +967,7 @@
   },
   {
     "card_name": "Seven of Cups",
+    "image": "aaa_cups07",
     "arcana": "minor",
     "suit": "cups",
     "rank": "7",
@@ -947,6 +990,7 @@
   },
   {
     "card_name": "Eight of Cups",
+    "image": "aaa_cups08",
     "arcana": "minor",
     "suit": "cups",
     "rank": "8",
@@ -969,6 +1013,7 @@
   },
   {
     "card_name": "Nine of Cups",
+    "image": "aaa_cups09",
     "arcana": "minor",
     "suit": "cups",
     "rank": "9",
@@ -991,6 +1036,7 @@
   },
   {
     "card_name": "Ten of Cups",
+    "image": "aaa_cups10",
     "arcana": "minor",
     "suit": "cups",
     "rank": "10",
@@ -1013,6 +1059,7 @@
   },
   {
     "card_name": "Page of Cups",
+    "image": "aaa_cups11",
     "arcana": "minor",
     "suit": "cups",
     "rank": "page",
@@ -1035,6 +1082,7 @@
   },
   {
     "card_name": "Knight of Cups",
+    "image": "aaa_cups12",
     "arcana": "minor",
     "suit": "cups",
     "rank": "knight",
@@ -1057,6 +1105,7 @@
   },
   {
     "card_name": "Queen of Cups",
+    "image": "aaa_cups13",
     "arcana": "minor",
     "suit": "cups",
     "rank": "queen",
@@ -1079,6 +1128,7 @@
   },
   {
     "card_name": "King of Cups",
+    "image": "aaa_cups14",
     "arcana": "minor",
     "suit": "cups",
     "rank": "king",
@@ -1101,6 +1151,7 @@
   },
   {
     "card_name": "Ace of Swords",
+    "image": "aaa_swords01",
     "arcana": "minor",
     "suit": "swords",
     "rank": "ace",
@@ -1123,6 +1174,7 @@
   },
   {
     "card_name": "Two of Swords",
+    "image": "aaa_swords02",
     "arcana": "minor",
     "suit": "swords",
     "rank": "2",
@@ -1145,6 +1197,7 @@
   },
   {
     "card_name": "Three of Swords",
+    "image": "aaa_swords03",
     "arcana": "minor",
     "suit": "swords",
     "rank": "3",
@@ -1167,6 +1220,7 @@
   },
   {
     "card_name": "Four of Swords",
+    "image": "aaa_swords04",
     "arcana": "minor",
     "suit": "swords",
     "rank": "4",
@@ -1189,6 +1243,7 @@
   },
   {
     "card_name": "Five of Swords",
+    "image": "aaa_swords05",
     "arcana": "minor",
     "suit": "swords",
     "rank": "5",
@@ -1211,6 +1266,7 @@
   },
   {
     "card_name": "Six of Swords",
+    "image": "aaa_swords06",
     "arcana": "minor",
     "suit": "swords",
     "rank": "6",
@@ -1233,6 +1289,7 @@
   },
   {
     "card_name": "Seven of Swords",
+    "image": "aaa_swords07",
     "arcana": "minor",
     "suit": "swords",
     "rank": "7",
@@ -1255,6 +1312,7 @@
   },
   {
     "card_name": "Eight of Swords",
+    "image": "aaa_swords08",
     "arcana": "minor",
     "suit": "swords",
     "rank": "8",
@@ -1277,6 +1335,7 @@
   },
   {
     "card_name": "Nine of Swords",
+    "image": "aaa_swords09",
     "arcana": "minor",
     "suit": "swords",
     "rank": "9",
@@ -1299,6 +1358,7 @@
   },
   {
     "card_name": "Ten of Swords",
+    "image": "aaa_swords10",
     "arcana": "minor",
     "suit": "swords",
     "rank": "10",
@@ -1321,6 +1381,7 @@
   },
   {
     "card_name": "Page of Swords",
+    "image": "aaa_swords11",
     "arcana": "minor",
     "suit": "swords",
     "rank": "page",
@@ -1343,6 +1404,7 @@
   },
   {
     "card_name": "Knight of Swords",
+    "image": "aaa_swords12",
     "arcana": "minor",
     "suit": "swords",
     "rank": "knight",
@@ -1365,6 +1427,7 @@
   },
   {
     "card_name": "Queen of Swords",
+    "image": "aaa_swords13",
     "arcana": "minor",
     "suit": "swords",
     "rank": "queen",
@@ -1387,6 +1450,7 @@
   },
   {
     "card_name": "King of Swords",
+    "image": "aaa_swords14",
     "arcana": "minor",
     "suit": "swords",
     "rank": "king",
@@ -1409,6 +1473,7 @@
   },
   {
     "card_name": "Ace of Pentacles",
+    "image": "aaa_pents01",
     "arcana": "minor",
     "suit": "pentacles",
     "rank": "ace",
@@ -1431,6 +1496,7 @@
   },
   {
     "card_name": "Two of Pentacles",
+    "image": "aaa_pents02",
     "arcana": "minor",
     "suit": "pentacles",
     "rank": "2",
@@ -1453,6 +1519,7 @@
   },
   {
     "card_name": "Three of Pentacles",
+    "image": "aaa_pents03",
     "arcana": "minor",
     "suit": "pentacles",
     "rank": "3",
@@ -1475,6 +1542,7 @@
   },
   {
     "card_name": "Four of Pentacles",
+    "image": "aaa_pents04",
     "arcana": "minor",
     "suit": "pentacles",
     "rank": "4",
@@ -1497,6 +1565,7 @@
   },
   {
     "card_name": "Five of Pentacles",
+    "image": "aaa_pents05",
     "arcana": "minor",
     "suit": "pentacles",
     "rank": "5",
@@ -1519,6 +1588,7 @@
   },
   {
     "card_name": "Six of Pentacles",
+    "image": "aaa_pents06",
     "arcana": "minor",
     "suit": "pentacles",
     "rank": "6",
@@ -1541,6 +1611,7 @@
   },
   {
     "card_name": "Seven of Pentacles",
+    "image": "aaa_pents07",
     "arcana": "minor",
     "suit": "pentacles",
     "rank": "7",
@@ -1563,6 +1634,7 @@
   },
   {
     "card_name": "Eight of Pentacles",
+    "image": "aaa_pents08",
     "arcana": "minor",
     "suit": "pentacles",
     "rank": "8",
@@ -1585,6 +1657,7 @@
   },
   {
     "card_name": "Nine of Pentacles",
+    "image": "aaa_pents09",
     "arcana": "minor",
     "suit": "pentacles",
     "rank": "9",
@@ -1607,6 +1680,7 @@
   },
   {
     "card_name": "Ten of Pentacles",
+    "image": "aaa_pents10",
     "arcana": "minor",
     "suit": "pentacles",
     "rank": "10",
@@ -1629,6 +1703,7 @@
   },
   {
     "card_name": "Page of Pentacles",
+    "image": "aaa_pents11",
     "arcana": "minor",
     "suit": "pentacles",
     "rank": "page",
@@ -1651,6 +1726,7 @@
   },
   {
     "card_name": "Knight of Pentacles",
+    "image": "aaa_pents12",
     "arcana": "minor",
     "suit": "pentacles",
     "rank": "knight",
@@ -1673,6 +1749,7 @@
   },
   {
     "card_name": "Queen of Pentacles",
+    "image": "aaa_pents13",
     "arcana": "minor",
     "suit": "pentacles",
     "rank": "queen",
@@ -1695,6 +1772,7 @@
   },
   {
     "card_name": "King of Pentacles",
+    "image": "aaa_pents14",
     "arcana": "minor",
     "suit": "pentacles",
     "rank": "king",

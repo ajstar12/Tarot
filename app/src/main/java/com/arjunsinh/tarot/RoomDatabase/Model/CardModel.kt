@@ -10,6 +10,7 @@ import kotlinx.parcelize.Parcelize
 class CardModel(
     @PrimaryKey(autoGenerate = true)
     var id: Int = 0,
+    var image: String = "",
     var arcana: String = "",
     var card_name: String = "",
     var career_reversed: String = "",
