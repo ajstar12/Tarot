@@ -36,6 +36,18 @@ class RoomRepository(application: Application, activity: Activity?) {
         return dao!!.getAllCard()
     }
 
+    fun getCardByArcana(arcana : String) : LiveData<List<CardModel>> {
+        return dao!!.getCardByArcana(arcana)
+    }
+
+    fun getCardBySuit(suit : String) : LiveData<List<CardModel>> {
+        return dao!!.getCardBySuit(suit)
+    }
+
+    fun getCardByRank(rank : String) : LiveData<List<CardModel>> {
+        return dao!!.getCardByRank(rank)
+    }
+
     /*
 
     // below method is to read all the courses.

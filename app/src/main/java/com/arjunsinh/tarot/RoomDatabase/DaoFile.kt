@@ -18,6 +18,15 @@ interface DaoFile {
 
     @Query("SELECT * FROM mst_card ORDER BY id ASC")
     fun getAllCard(): LiveData<List<CardModel>>
+
+    @Query("SELECT * FROM mst_card WHERE arcana = :arcana ORDER BY id ASC")
+    fun getCardByArcana(arcana : String): LiveData<List<CardModel>>
+
+    @Query("SELECT * FROM mst_card WHERE suit = :suit ORDER BY id ASC")
+    fun getCardBySuit(suit : String): LiveData<List<CardModel>>
+
+    @Query("SELECT * FROM mst_card WHERE rank = :rank ORDER BY id ASC")
+    fun getCardByRank(rank : String): LiveData<List<CardModel>>
 /*
 
     @Query("SELECT * FROM mst_character ORDER BY id DESC")

@@ -45,7 +45,129 @@ class MainActivity : AppCompatActivity() {
     private fun setClick() {
 
         binding.btnAll.setOnClickListener {
-            startActivity(Intent(this@MainActivity, CardListActivity::class.java))
+            var intent = Intent(this@MainActivity, CardListActivity::class.java)
+            intent.putExtra("CardType", Constant.keyWords.All)
+            startActivity(intent)
+        }
+
+        binding.btnMajorArcana.setOnClickListener {
+            var intent = Intent(this@MainActivity, CardListActivity::class.java)
+            intent.putExtra("CardType", Constant.keyWords.MajorArcana)
+            startActivity(intent)
+        }
+
+        binding.btnMinorArcana.setOnClickListener {
+            var intent = Intent(this@MainActivity, CardListActivity::class.java)
+            intent.putExtra("CardType", Constant.keyWords.MinorArcana)
+            startActivity(intent)
+        }
+
+        binding.btnWands.setOnClickListener {
+            var intent = Intent(this@MainActivity, CardListActivity::class.java)
+            intent.putExtra("CardType", Constant.keyWords.Wands)
+            startActivity(intent)
+        }
+
+        binding.btnSwords.setOnClickListener {
+            var intent = Intent(this@MainActivity, CardListActivity::class.java)
+            intent.putExtra("CardType", Constant.keyWords.Swords)
+            startActivity(intent)
+        }
+
+        binding.btnPentacles.setOnClickListener {
+            var intent = Intent(this@MainActivity, CardListActivity::class.java)
+            intent.putExtra("CardType", Constant.keyWords.Pentacles)
+            startActivity(intent)
+        }
+
+        binding.btnCups.setOnClickListener {
+            var intent = Intent(this@MainActivity, CardListActivity::class.java)
+            intent.putExtra("CardType", Constant.keyWords.Cups)
+            startActivity(intent)
+        }
+
+        binding.btnPages.setOnClickListener {
+            var intent = Intent(this@MainActivity, CardListActivity::class.java)
+            intent.putExtra("CardType", Constant.keyWords.Pages)
+            startActivity(intent)
+        }
+
+        binding.btnQueens.setOnClickListener {
+            var intent = Intent(this@MainActivity, CardListActivity::class.java)
+            intent.putExtra("CardType", Constant.keyWords.Queens)
+            startActivity(intent)
+        }
+
+        binding.btnKnights.setOnClickListener {
+            var intent = Intent(this@MainActivity, CardListActivity::class.java)
+            intent.putExtra("CardType", Constant.keyWords.Knights)
+            startActivity(intent)
+        }
+
+        binding.btnKings.setOnClickListener {
+            var intent = Intent(this@MainActivity, CardListActivity::class.java)
+            intent.putExtra("CardType", Constant.keyWords.Kings)
+            startActivity(intent)
+        }
+
+        binding.btnNumber1.setOnClickListener {
+            var intent = Intent(this@MainActivity, CardListActivity::class.java)
+            intent.putExtra("CardType", Constant.keyWords.Number1)
+            startActivity(intent)
+        }
+
+        binding.btnNumber2.setOnClickListener {
+            var intent = Intent(this@MainActivity, CardListActivity::class.java)
+            intent.putExtra("CardType", Constant.keyWords.Number2)
+            startActivity(intent)
+        }
+
+        binding.btnNumber3.setOnClickListener {
+            var intent = Intent(this@MainActivity, CardListActivity::class.java)
+            intent.putExtra("CardType", Constant.keyWords.Number3)
+            startActivity(intent)
+        }
+
+        binding.btnNumber4.setOnClickListener {
+            var intent = Intent(this@MainActivity, CardListActivity::class.java)
+            intent.putExtra("CardType", Constant.keyWords.Number4)
+            startActivity(intent)
+        }
+
+        binding.btnNumber5.setOnClickListener {
+            var intent = Intent(this@MainActivity, CardListActivity::class.java)
+            intent.putExtra("CardType", Constant.keyWords.Number5)
+            startActivity(intent)
+        }
+
+        binding.btnNumber6.setOnClickListener {
+            var intent = Intent(this@MainActivity, CardListActivity::class.java)
+            intent.putExtra("CardType", Constant.keyWords.Number6)
+            startActivity(intent)
+        }
+
+        binding.btnNumber7.setOnClickListener {
+            var intent = Intent(this@MainActivity, CardListActivity::class.java)
+            intent.putExtra("CardType", Constant.keyWords.Number7)
+            startActivity(intent)
+        }
+
+        binding.btnNumber8.setOnClickListener {
+            var intent = Intent(this@MainActivity, CardListActivity::class.java)
+            intent.putExtra("CardType", Constant.keyWords.Number8)
+            startActivity(intent)
+        }
+
+        binding.btnNumber9.setOnClickListener {
+            var intent = Intent(this@MainActivity, CardListActivity::class.java)
+            intent.putExtra("CardType", Constant.keyWords.Number9)
+            startActivity(intent)
+        }
+
+        binding.btnNumber10.setOnClickListener {
+            var intent = Intent(this@MainActivity, CardListActivity::class.java)
+            intent.putExtra("CardType", Constant.keyWords.Number10)
+            startActivity(intent)
         }
     }
 }

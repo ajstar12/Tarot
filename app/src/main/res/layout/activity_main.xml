@@ -5,74 +5,178 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@color/home_bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnAll"
-        android:text="See All Card"
+    <androidx.core.widget.NestedScrollView
+        android:fillViewport="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_margin="@dimen/_7sdp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:text="Major Arcana"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <TextView
+                android:textStyle="bold"
+                android:textSize="@dimen/_15ssp"
+                android:gravity="center"
+                android:padding="@dimen/_15sdp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/btn_1"
+                android:background="@drawable/shape_button"
+                android:id="@+id/btnAll"
+                android:text="See All Card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:text="Minor Arcana"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:text="Wands"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginEnd="@dimen/_7sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15ssp"
+                    android:gravity="center"
+                    android:padding="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/btn_2"
+                    android:background="@drawable/shape_button"
+                    android:id="@+id/btnMajorArcana"
+                    android:text="Major Arcana"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:text="Swords"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15ssp"
+                    android:gravity="center"
+                    android:padding="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/btn_2"
+                    android:background="@drawable/shape_button"
+                    android:id="@+id/btnMinorArcana"
+                    android:text="Minor Arcana"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:text="Pentacles"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnWands"
+                android:text="Wands"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:text="Cups"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSwords"
+                android:text="Swords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:text="Kings"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPentacles"
+                android:text="Pentacles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:text="Queens"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCups"
+                android:text="Cups"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:text="Knights"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnKings"
+                android:text="Kings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:text="Pages"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnQueens"
+                android:text="Queens"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:text="Number 1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnKnights"
+                android:text="Knights"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:text="Number 2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnPages"
+                android:text="Pages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNumber1"
+                android:text="Number 1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNumber2"
+                android:text="Number 2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNumber3"
+                android:text="Number 3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNumber4"
+                android:text="Number 4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNumber5"
+                android:text="Number 5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNumber6"
+                android:text="Number 6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNumber7"
+                android:text="Number 7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNumber8"
+                android:text="Number 8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNumber9"
+                android:text="Number 9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnNumber10"
+                android:text="Number 10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 </LinearLayout>

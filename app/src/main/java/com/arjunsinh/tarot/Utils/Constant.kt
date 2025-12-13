@@ -13,6 +13,30 @@ object Constant {
 
     const val tag: String = "Arjun_Test"
 
+    object keyWords {
+        val All = "All"
+        val MajorArcana = "MajorArcana"
+        val MinorArcana = "MinorArcana"
+        val Wands = "Wands"
+        val Swords = "Swords"
+        val Pentacles = "Pentacles"
+        val Cups = "Cups"
+        val Pages = "Pages"
+        val Queens = "Queens"
+        val Knights = "Knights"
+        val Kings = "Kings"
+        val Number1 = "Number1"
+        val Number2 = "Number2"
+        val Number3 = "Number3"
+        val Number4 = "Number4"
+        val Number5 = "Number5"
+        val Number6 = "Number6"
+        val Number7 = "Number7"
+        val Number8 = "Number8"
+        val Number9 = "Number9"
+        val Number10 = "Number10"
+    }
+
     fun log(type: String, data: String, e: Throwable) {
         Log.e(tag, "$tag $type : $data", e)
     }

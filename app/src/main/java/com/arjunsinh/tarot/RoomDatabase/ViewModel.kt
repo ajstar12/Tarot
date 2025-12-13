@@ -21,5 +21,14 @@ class ViewModel(application: Application, activity: Activity?) {
     fun getAllCard() : LiveData<List<CardModel>> {
         return repository!!.getAllCard()
     }
+    fun getCardByArcana(arcana : String) : LiveData<List<CardModel>> {
+        return repository!!.getCardByArcana(arcana)
+    }
+    fun getCardBySuit(suit : String) : LiveData<List<CardModel>> {
+        return repository!!.getCardBySuit(suit)
+    }
+    fun getCardByRank(rank : String) : LiveData<List<CardModel>> {
+        return repository!!.getCardByRank(rank)
+    }
 
 }
