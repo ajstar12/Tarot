@@ -2,8 +2,15 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="head_color">#5A3E2B</color>
+    <color name="golden_theme">#C9A24D</color>
+    <color name="golden_theme_transparente_80">#67C9A24D</color>
     <color name="bg_color">#F4E7D1</color>
-    <color name="home_bg">#532298</color>
+<!--    #F4E7D1 + #C9A24D + #5A3E2B-->
+    <color name="home_bg">#F4E7D1</color>
     <color name="btn_1">#3C4B8D</color>
     <color name="btn_2">#804374</color>
+    <color name="btn_3">#723171</color>
+    <color name="btn_4">#444A7C</color>
+    <color name="btn_5">#7336B1</color>
 </resources>

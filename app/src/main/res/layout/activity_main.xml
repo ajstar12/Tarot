@@ -10,6 +10,10 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <include
+        android:id="@+id/headerLayout"
+        layout="@layout/header_layout"/>
+
     <androidx.core.widget.NestedScrollView
         android:fillViewport="true"
         android:layout_width="match_parent"
@@ -69,114 +73,416 @@
                     android:layout_height="wrap_content"/>
 
             </LinearLayout>
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnWands"
-                android:text="Wands"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnSwords"
-                android:text="Swords"
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content">
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnPentacles"
-                android:text="Pentacles"
+                <LinearLayout
+                    android:layout_marginEnd="@dimen/_7sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:orientation="vertical"
+                    android:backgroundTint="@color/btn_3"
+                    android:background="@drawable/shape_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img_wands"
+                        android:layout_width="@dimen/_35sdp"
+                        android:layout_height="@dimen/_30sdp"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_15ssp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:id="@+id/btnWands"
+                        android:text="Wands"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:padding="@dimen/_8sdp"
+                    android:orientation="vertical"
+                    android:backgroundTint="@color/btn_3"
+                    android:background="@drawable/shape_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img_swords"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_15ssp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:id="@+id/btnSwords"
+                        android:text="Swords"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content">
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnCups"
-                android:text="Cups"
+                <LinearLayout
+                    android:layout_marginEnd="@dimen/_7sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:orientation="vertical"
+                    android:backgroundTint="@color/btn_3"
+                    android:background="@drawable/shape_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img_pentacles"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_15ssp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:id="@+id/btnPentacles"
+                        android:text="Pentacles"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:padding="@dimen/_8sdp"
+                    android:orientation="vertical"
+                    android:backgroundTint="@color/btn_3"
+                    android:background="@drawable/shape_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img_cups"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_15ssp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:id="@+id/btnCups"
+                        android:text="Cups"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_marginEnd="@dimen/_7sdp"
+                    android:padding="@dimen/_8sdp"
+                    android:orientation="vertical"
+                    android:backgroundTint="@color/btn_4"
+                    android:background="@drawable/shape_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnKings"
-                android:text="Kings"
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img_kings"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_15ssp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:id="@+id/btnKings"
+                        android:text="Kings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:padding="@dimen/_8sdp"
+                    android:orientation="vertical"
+                    android:backgroundTint="@color/btn_4"
+                    android:background="@drawable/shape_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center"
+                        android:src="@drawable/img_queens"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"/>
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:textSize="@dimen/_15ssp"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:id="@+id/btnQueens"
+                        android:text="Queens"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginEnd="@dimen/_7sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15ssp"
+                    android:gravity="center"
+                    android:padding="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/btn_4"
+                    android:background="@drawable/shape_button"
+                    android:id="@+id/btnKnights"
+                    android:text="Knights"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnQueens"
-                android:text="Queens"
+                <TextView
+                    android:layout_marginEnd="@dimen/_7sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15ssp"
+                    android:gravity="center"
+                    android:padding="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/btn_4"
+                    android:background="@drawable/shape_button"
+                    android:id="@+id/btnPages"
+                    android:text="Pages"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginEnd="@dimen/_7sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15ssp"
+                    android:gravity="center"
+                    android:padding="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/btn_5"
+                    android:background="@drawable/shape_button"
+                    android:id="@+id/btnNumber1"
+                    android:text="Number 1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnKnights"
-                android:text="Knights"
+                <TextView
+                    android:layout_marginEnd="@dimen/_7sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15ssp"
+                    android:gravity="center"
+                    android:padding="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/btn_5"
+                    android:background="@drawable/shape_button"
+                    android:id="@+id/btnNumber2"
+                    android:text="Number 2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginEnd="@dimen/_7sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15ssp"
+                    android:gravity="center"
+                    android:padding="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/btn_5"
+                    android:background="@drawable/shape_button"
+                    android:id="@+id/btnNumber3"
+                    android:text="Number 3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnPages"
-                android:text="Pages"
+                <TextView
+                    android:layout_marginEnd="@dimen/_7sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15ssp"
+                    android:gravity="center"
+                    android:padding="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/btn_5"
+                    android:background="@drawable/shape_button"
+                    android:id="@+id/btnNumber4"
+                    android:text="Number 4"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content">
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnNumber1"
-                android:text="Number 1"
+                <TextView
+                    android:layout_marginEnd="@dimen/_7sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15ssp"
+                    android:gravity="center"
+                    android:padding="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/btn_5"
+                    android:background="@drawable/shape_button"
+                    android:id="@+id/btnNumber5"
+                    android:text="Number 5"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginEnd="@dimen/_7sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15ssp"
+                    android:gravity="center"
+                    android:padding="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/btn_5"
+                    android:background="@drawable/shape_button"
+                    android:id="@+id/btnNumber6"
+                    android:text="Number 6"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content">
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnNumber2"
-                android:text="Number 2"
+                <TextView
+                    android:layout_marginEnd="@dimen/_7sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15ssp"
+                    android:gravity="center"
+                    android:padding="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/btn_5"
+                    android:background="@drawable/shape_button"
+                    android:id="@+id/btnNumber7"
+                    android:text="Number 7"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_marginEnd="@dimen/_7sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15ssp"
+                    android:gravity="center"
+                    android:padding="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/btn_5"
+                    android:background="@drawable/shape_button"
+                    android:id="@+id/btnNumber8"
+                    android:text="Number 8"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/_7sdp"
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content">
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnNumber3"
-                android:text="Number 3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginEnd="@dimen/_7sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15ssp"
+                    android:gravity="center"
+                    android:padding="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/btn_5"
+                    android:background="@drawable/shape_button"
+                    android:id="@+id/btnNumber9"
+                    android:text="Number 9"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnNumber4"
-                android:text="Number 4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_marginEnd="@dimen/_7sdp"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15ssp"
+                    android:gravity="center"
+                    android:padding="@dimen/_15sdp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/btn_5"
+                    android:background="@drawable/shape_button"
+                    android:id="@+id/btnNumber10"
+                    android:text="Number 10"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"/>
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnNumber5"
-                android:text="Number 5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnNumber6"
-                android:text="Number 6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnNumber7"
-                android:text="Number 7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnNumber8"
-                android:text="Number 8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnNumber9"
-                android:text="Number 9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnNumber10"
-                android:text="Number 10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
+            </LinearLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 </LinearLayout>

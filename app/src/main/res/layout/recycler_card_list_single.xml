@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <LinearLayout
-            android:layout_margin="@dimen/_7sdp"
+            android:padding="@dimen/_7sdp"
+            android:background="@color/golden_theme_transparente_80"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -23,6 +24,8 @@
                 android:layout_height="@dimen/_70sdp"/>
 
             <TextView
+                android:textSize="@dimen/_15ssp"
+                android:fontFamily="@font/cinzel_decorative_bold"
                 android:layout_marginStart="@dimen/_7sdp"
                 android:layout_gravity="center"
                 android:textColor="@color/black"

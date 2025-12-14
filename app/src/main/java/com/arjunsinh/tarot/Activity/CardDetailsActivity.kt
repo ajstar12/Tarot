@@ -45,6 +45,7 @@ class CardDetailsActivity : AppCompatActivity() {
             Constant.log("card_details", Gson().toJson(card_details))
             binding.txtCardName.text = card_details!!.card_name
 
+//            binding.headerLayout.txtTitle.text = card_details.card_name
 
             binding.txtArcana.text = card_details.arcana
             binding.txtSuit.text = card_details.suit

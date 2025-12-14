@@ -5,11 +5,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="@color/home_bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity.CardListActivity">
 
+    <include
+        android:id="@+id/headerLayout"
+        layout="@layout/header_layout"/>
+
     <EditText
+        android:backgroundTint="@color/white"
         android:id="@+id/edtSearch"
         android:layout_margin="@dimen/_5sdp"
         android:padding="@dimen/_7sdp"
