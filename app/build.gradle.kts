@@ -13,8 +13,8 @@ android {
         applicationId = "com.arjunsinh.tarot"
         minSdk = 24
         targetSdk = 35
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.02"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -58,4 +58,6 @@ dependencies {
 
     implementation("com.intuit.ssp:ssp-android:1.1.0")
     implementation("com.intuit.sdp:sdp-android:1.1.0")
+
+    implementation("com.google.android.play:app-update:2.1.0")
 }

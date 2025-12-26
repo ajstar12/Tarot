@@ -33,6 +33,7 @@ class SplashActivity : AppCompatActivity() {
         handler.postDelayed(Runnable {
             run {
                 startActivity(Intent(this@SplashActivity, MainActivity::class.java))
+                finish()
             }
         },2000)
     }

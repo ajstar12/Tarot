@@ -1,8 +1,15 @@
 package com.arjunsinh.tarot
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.result.ActivityResult
+import androidx.activity.result.ActivityResultCallback
+import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.IntentSenderRequest
+import androidx.activity.result.contract.ActivityResultContracts.StartIntentSenderForResult
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -12,11 +19,18 @@ import com.arjunsinh.tarot.RoomDatabase.Model.CardModel
 import com.arjunsinh.tarot.RoomDatabase.ViewModel
 import com.arjunsinh.tarot.Utils.Constant
 import com.arjunsinh.tarot.databinding.ActivityMainBinding
+import com.google.android.play.core.appupdate.AppUpdateInfo
+import com.google.android.play.core.appupdate.AppUpdateManagerFactory
+import com.google.android.play.core.appupdate.AppUpdateOptions
+import com.google.android.play.core.install.model.AppUpdateType
+import com.google.android.play.core.install.model.UpdateAvailability
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var sharedPreferences: SharedPreferences
     lateinit var binding: ActivityMainBinding
     lateinit var viewModel: ViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,9 +51,24 @@ class MainActivity : AppCompatActivity() {
     private fun inIt() {
         viewModel = ViewModel(application, this)
 
-//        var json = assets.open("data.json").bufferedReader().use { it.readText() }
-//        var list: List<CardModel> = Gson().fromJson(json, object : TypeToken<List<CardModel>>() {}.type)
-//        Constant.saveData(viewModel, list)
+        sharedPreferences = getSharedPreferences("TarotData", MODE_PRIVATE)
+        if (sharedPreferences!!.getString("DataLoaded", "No").equals("No")){
+            setupData()
+        }
+
+        checkUpdateAvailble()
+    }
+
+    private fun setupData() {
+
+        var se = sharedPreferences!!.edit()
+        se.putString("DataLoaded","Yes")
+        se.apply()
+        se.commit()
+
+        var json = assets.open("data.json").bufferedReader().use { it.readText() }
+        var list: List<CardModel> = Gson().fromJson(json, object : TypeToken<List<CardModel>>() {}.type)
+        Constant.saveData(viewModel, list)
     }
 
     private fun setClick() {
@@ -170,4 +199,28 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    fun checkUpdateAvailble() {
+        val appUpdateManager = AppUpdateManagerFactory.create(this)
+        val appUpdateInfoTask = appUpdateManager.appUpdateInfo
+        appUpdateInfoTask.addOnSuccessListener { appUpdateInfo: AppUpdateInfo ->
+            if (appUpdateInfo.updateAvailability() == UpdateAvailability.UPDATE_AVAILABLE) {
+                appUpdateManager.startUpdateFlowForResult(appUpdateInfo, activityResultLauncher, AppUpdateOptions.newBuilder(AppUpdateType.FLEXIBLE).build())
+            }
+        }
+    }
+
+    var activityResultLauncher: ActivityResultLauncher<IntentSenderRequest> =
+        registerForActivityResult(
+            StartIntentSenderForResult(),
+            object : ActivityResultCallback<ActivityResult> {
+                override fun onActivityResult(result: ActivityResult) {
+                    // handle callback
+                    if (result.resultCode != RESULT_OK) {
+                        Constant.log("ActivityResultCallback", "Update flow failed! Result code: " + result.resultCode)
+                        // If the update is canceled or fails,
+                        // you can request to start the update again.
+                    }
+                }
+            })
 }
