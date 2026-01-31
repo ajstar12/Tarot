@@ -13,14 +13,14 @@ android {
         applicationId = "com.arjunsinh.tarot"
         minSdk = 24
         targetSdk = 35
-        versionCode = 9
-        versionName = "1.09"
+        versionCode = 10
+        versionName = "1.10"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
     signingConfigs {
         create("release") {
-            storeFile = file("release.keystore")
+            storeFile = file("tarot.jks")
             storePassword = System.getenv("KEYSTORE_PASSWORD")
             keyAlias = System.getenv("KEY_ALIAS")
             keyPassword = System.getenv("KEY_PASSWORD")

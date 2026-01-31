@@ -27,7 +27,7 @@ jobs:
       # 🔐 Decode keystore into app/
       - name: Decode release keystore
         run: |
-          echo "${{ secrets.RELEASE_KEYSTORE_B64 }}" | base64 -d > app/release.keystore
+          echo "${{ secrets.RELEASE_KEYSTORE_B64 }}" | base64 -d > app/tarot.jks
 
       - name: Build Release Bundle
         run: ./gradlew bundleRelease
